@@ -13,5 +13,6 @@ The `/locations/[id]` page is meant to be projected, and each time is meant to h
 ### Issues
 
 - The locations aren’t [secured with permissions](https://www.instantdb.com/docs/permissions) in the database; I just hoped that no one would reverse-engineer the database in the 10 minutes that we played.
-- If you refresh the page, you can get 2 more guesses — but everyone can see on the projected screen that you guessed more times than is allowed.
+- If you refresh the guessing page, you can get 2 more guesses — but everyone can see on the projected screen that you guessed more times than is allowed.
+- There’s a couple `@ts-expect-error` comments where I didn’t have time to figure out how to make the types work properly.
 - Many more, I’m sure.
